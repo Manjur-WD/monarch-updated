@@ -28,9 +28,10 @@
 }
 
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.521)), url(../images/BG-01.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.521)), url(../images/BG-01.png) repeat;
     font-family: "Poppins", sans-serif;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .font-mont {
@@ -372,11 +373,11 @@ header .online-admission {
     margin-left: 10px;
 }
 
-.our-course{
+.our-course {
     position: relative;
 }
 
-.our-course h2::after{
+.our-course h2::after {
     content: "";
     height: 2px;
     width: 200px;
@@ -447,7 +448,7 @@ header .online-admission {
     background: linear-gradient(to bottom, #fff 50%, #F7CD68 50%);
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
     .some-facts {
         background: linear-gradient(to bottom, #fff 10%, #F7CD68 90%);
     }
@@ -467,7 +468,7 @@ header .online-admission {
     transition: all 0.5s ease-in-out;
 }
 
-.fact-card:hover{
+.fact-card:hover {
     transform: translateY(-20px);
 }
 
@@ -487,7 +488,7 @@ header .online-admission {
     left: 30px;
 }
 
-.map-frame{
+.map-frame {
     height: 400px;
     width: 100%;
     border-top: 10px solid #292828;
@@ -555,7 +556,7 @@ footer .bottom-head p {
 }
 
 .dropdown-menu {
-    background: rgba(0, 0, 0, 0.582);
+    background: rgba(0, 0, 0, 0.843);
     border-radius: 0px;
     animation: slideUp 0.8s ease-in-out forwards;
 }
@@ -566,7 +567,7 @@ footer .bottom-head p {
 }
 
 .submenu {
-    color: #EFAB00 !important;
+    color: #F7CD68 !important;
 }
 
 .submenu:hover {
@@ -601,7 +602,7 @@ footer .bottom-head p {
 }
 
 .dropdown-menu li a {
-    color: orange;
+    color: #F7CD68;
     font-size: 12px;
 }
 
@@ -612,6 +613,78 @@ footer .bottom-head p {
 
 .fixed-top {
     animation: slideDown 0.3s ease-in-out;
+}
+
+.gal-card img {
+    height: 200px;
+    width: 100% !important;
+    object-fit: cover;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px #F7CD68;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.gal-card img:hover{
+    scale: 0.95;
+}
+
+.gal-head::after,
+.course-head::after{
+    content: "";
+    background-color: brown;
+    height: 2px;
+    width: 100px;
+    display: inline-block;
+}
+
+
+
+.gal-desc {
+    font-size: 12px;
+}
+
+.course-description{
+    margin-left: 50px;
+    position: relative;
+}
+
+.course-description::before{
+    content: "";
+    background-color: brown;
+    height: 50px;
+    width: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+
+.course-certificate{
+    margin-left: 30px;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.course-certificate span{
+    background-color: #F7CD68;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.film-making-sem-list li{
+    color: #686767;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.film-making-sem-list li span{
+    color: black;
 }
 
 .application-form-body {
