@@ -20,7 +20,7 @@
 }
 
 .primary-color {
-    color: #EFAB00;
+    color: #F7CD68;
 }
 
 .secondary-color {
@@ -124,7 +124,7 @@ header .search-section button {
 }
 
 header .contact-head a {
-    font-size: 10px;
+    font-size: 13px;
     color: #292828;
     padding: 0 5px;
 }
@@ -275,6 +275,7 @@ header .online-admission {
 .mr-right a:hover {
     display: inline-block;
     scale: 0.9;
+    background-color: red;
 }
 
 
@@ -631,7 +632,9 @@ footer .bottom-head p {
 }
 
 .gal-head::after,
-.course-head::after{
+.course-head::after,
+.about-head::after,
+.testi-head::after{
     content: "";
     background-color: brown;
     height: 2px;
@@ -685,6 +688,44 @@ footer .bottom-head p {
 
 .film-making-sem-list li span{
     color: black;
+}
+
+.testimonials{
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials .owl-stage-outer{
+    padding-top: 50px;
+}
+
+.testi-card{
+    position: relative;
+    background: linear-gradient(to bottom,#F7CD68,white);
+    border-radius: 20px;
+    border: 1px solid #dbdad6;
+    min-height: 300px;
+}
+
+.testi-card .comment{
+    font-style: italic;
+}
+
+.testi-card .testi-name{
+    color: brown;
+}
+
+.testi-card img{
+    height: 80px;
+    width: 80px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    z-index: 9999;
+    border: 8px solid #ffffff;
 }
 
 .application-form-body {
@@ -1362,3 +1403,84 @@ marquee span {
         height: 300px;
     }
 }
+<<<<<<< HEAD
+
+
+.our-departments {
+    background: url(../images/BG-eft-01.png) no-repeat center/contain;
+}
+
+.our-departments h2 {
+    font-size: 5vmin;
+    font-weight: 900;
+}
+
+.our-departments h2 span {
+    color: #F7CD68;
+}
+
+.dept-card {
+    background-color: white;
+    border-radius: 0 0 30px 0;
+    box-shadow: 0 0 10px rgb(168, 167, 167);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dept-card:hover {
+    scale: 0.9;
+}
+
+.dept-card:hover img {
+    scale: 1.2;
+}
+
+.dept-card .dept-img {
+    position: relative;
+    background-color: #F7CD68;
+    padding: 10px 10px 12px 10px;
+    overflow: hidden;
+}
+
+.dept-card .dept-img img {
+    border-radius: 20px;
+    height: 180px !important;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+
+.dept-card p {
+    height: 100%;
+    width: 100%;
+}
+
+.dept-card .dept-img .dept-name {
+    font-size: 12px;
+    font-weight: 900 !important;
+    line-height: 12px !important;
+    padding: 5px !important;
+    position: absolute;
+    height: auto;
+    width: 70%;
+    top: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    border-radius: 15px;
+    color: darkred;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.dept-card .dept-desc {
+    font-size: 13px;
+    padding: 10px 10px;
+}
+=======
+>>>>>>> a9af19ce273812e289df88dab5849badca4c68f0
