@@ -91,7 +91,7 @@ header .top-head a.logo h2 {
 header .top-head a.logo p {
     font-size: 12px;
     color: #292828;
-    text-align: right;
+    text-align: left;
     font-weight: 500;
 }
 
@@ -378,7 +378,8 @@ header .online-admission {
     position: relative;
 }
 
-.our-course h2::after {
+.our-course h2::after,
+.hiring-partners h2::after {
     content: "";
     height: 2px;
     width: 200px;
@@ -389,6 +390,7 @@ header .online-admission {
     right: 30%;
     transform: translateX(-50%);
 }
+
 
 .course-card {
     border-radius: 20px;
@@ -445,8 +447,14 @@ header .online-admission {
 }
 
 .some-facts {
-    min-height: 50vh;
-    background: linear-gradient(to bottom, #fff 50%, #F7CD68 50%);
+    padding-bottom: 60px;
+    background: #F7CD68;
+    margin-top: 100px;
+}
+
+.fact-row {
+    position: relative;
+    top: -50px;
 }
 
 @media(max-width: 600px) {
@@ -455,7 +463,7 @@ header .online-admission {
     }
 }
 
-.some-facts h2 span {
+.fact-wrapper h2 span {
     color: #F7CD68;
 }
 
@@ -627,14 +635,14 @@ footer .bottom-head p {
     transition: all 0.5s ease-in-out;
 }
 
-.gal-card img:hover{
+.gal-card img:hover {
     scale: 0.95;
 }
 
 .gal-head::after,
 .course-head::after,
 .about-head::after,
-.testi-head::after{
+.testi-head::after {
     content: "";
     background-color: brown;
     height: 2px;
@@ -648,12 +656,12 @@ footer .bottom-head p {
     font-size: 12px;
 }
 
-.course-description{
+.course-description {
     margin-left: 50px;
     position: relative;
 }
 
-.course-description::before{
+.course-description::before {
     content: "";
     background-color: brown;
     height: 50px;
@@ -664,13 +672,13 @@ footer .bottom-head p {
     left: -20px;
 }
 
-.course-certificate{
+.course-certificate {
     margin-left: 30px;
     display: inline-flex;
     gap: 20px;
 }
 
-.course-certificate span{
+.course-certificate span {
     background-color: #F7CD68;
     color: white;
     border-radius: 50%;
@@ -680,42 +688,42 @@ footer .bottom-head p {
     margin-right: 10px;
 }
 
-.film-making-sem-list li{
+.film-making-sem-list li {
     color: #686767;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.film-making-sem-list li span{
+.film-making-sem-list li span {
     color: black;
 }
 
-.testimonials{
+.testimonials {
     position: relative;
     z-index: 1;
 }
 
-.testimonials .owl-stage-outer{
+.testimonials .owl-stage-outer {
     padding-top: 50px;
 }
 
-.testi-card{
+.testi-card {
     position: relative;
-    background: linear-gradient(to bottom,#F7CD68,white);
+    background: linear-gradient(to bottom, #F7CD68, white);
     border-radius: 20px;
     border: 1px solid #dbdad6;
     min-height: 300px;
 }
 
-.testi-card .comment{
+.testi-card .comment {
     font-style: italic;
 }
 
-.testi-card .testi-name{
+.testi-card .testi-name {
     color: brown;
 }
 
-.testi-card img{
+.testi-card img {
     height: 80px;
     width: 80px !important;
     object-fit: cover;
@@ -1403,7 +1411,7 @@ marquee span {
         height: 300px;
     }
 }
-<<<<<<< HEAD
+
 
 
 .our-departments {
@@ -1482,5 +1490,119 @@ marquee span {
     font-size: 13px;
     padding: 10px 10px;
 }
-=======
->>>>>>> a9af19ce273812e289df88dab5849badca4c68f0
+
+.get-in-touch {
+    background: url(../images/contact-bg.png) no-repeat center/cover;
+}
+
+.form-body form {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 20px;
+}
+
+.form-body form input,
+.form-body form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-body form input::placeholder,
+.form-body form textarea::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-body form button {
+    width: 100%;
+    background-color: #CA3528;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.get-it-touch-body h2 {
+    font-size: 12vmin;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #CA3528;
+    text-shadow: 0 3px 0 black;
+}
+
+.get-it-touch-body h2 span {
+    color: #F7CD68;
+}
+
+.get-it-touch-body h3 {
+    color: black;
+}
+
+.get-it-touch-body p {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.get-it-touch-body p span {
+    color: #CA3528;
+}
+
+@media(max-width: 768px) {
+    .get-it-touch-body p {
+        width: 100%;
+    }
+}
+
+
+.client-slider {
+    padding: 40px;
+}
+
+.client {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 2px;
+    box-shadow: 5px 5px 10px rgb(193, 190, 190);
+    border: 1px solid rgb(215, 214, 214);
+}
+
+.client-slider .owl-stage-outer{
+    padding-bottom: 20px;
+}
+
+@keyframes shine {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  .shining-text {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.25rem; /* equivalent to fs-6 */
+    background: linear-gradient(90deg, #000000 25%, #ffffff 40%, #000000 75%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 20s linear infinite;
+  }
+  
