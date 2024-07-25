@@ -1,3 +1,7 @@
+setTimeout(()=>{
+$("#preloader").fadeOut();
+},3000)
+
 $('.testimonials .owl-carousel').owlCarousel({
     loop:true,
     margin:10,

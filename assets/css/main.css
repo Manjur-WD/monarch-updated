@@ -11,6 +11,10 @@
     src: url(../fonts-bahn/fonnts.com-Bahnschrift.ttf);
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .font-bahn {
     font-family: bahn;
 }
@@ -621,11 +625,12 @@ footer .bottom-head p {
 }
 
 .fixed-top {
+    width: 100vw;
     animation: slideDown 0.3s ease-in-out;
 }
 
 .gal-card img {
-    height: 200px;
+    height: 250px;
     width: 100% !important;
     object-fit: cover;
     margin: auto;
@@ -1605,4 +1610,88 @@ marquee span {
     -webkit-text-fill-color: transparent;
     animation: shine 20s linear infinite;
   }
+
+  .preloader{
+    position: fixed;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
   
+
+  @media(max-width: 600px){
+
+    .top-head > div{
+        align-items: end !important;
+    }
+    header .top-head a.logo p{
+        display: none  !important;
+    }
+
+    .contact-head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .application-form{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .application-form a{
+        display: inline-block;
+        margin: 4px;
+    }
+
+    .marquee{
+        flex-direction: column-reverse;
+    }
+
+    .marquee .mr-right{
+        text-align: center !important;
+        padding-bottom: 10px;
+    }
+
+    .marquee .mr-left{
+        text-align: center;
+    }
+
+    .director-desig::before, .director-desig::after{
+        width: 50px;
+    }
+
+    .about-text{
+        padding: 10px;
+    }
+    
+    .our-course h2::after, .hiring-partners h2::after{
+        right: -1%;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    .some-quote{
+        padding: 20px;
+    }
+
+    .governing-body{
+        padding: 10px 0;
+    }
+
+    .form-body{
+        padding-top: 30px;
+    }
+
+    .get-it-touch-body{
+        margin-bottom: 30px;
+    }
+    .hero-notice > div{
+        flex-direction: column-reverse;
+    }
+  }
